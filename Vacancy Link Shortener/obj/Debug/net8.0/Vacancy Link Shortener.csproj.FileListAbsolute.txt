@@ -1,0 +1,14 @@
+D:\Vacancy-Link-Shortener\Vacancy Link Shortener\bin\Debug\net8.0\Vacancy Link Shortener.exe
+D:\Vacancy-Link-Shortener\Vacancy Link Shortener\bin\Debug\net8.0\Vacancy Link Shortener.deps.json
+D:\Vacancy-Link-Shortener\Vacancy Link Shortener\bin\Debug\net8.0\Vacancy Link Shortener.runtimeconfig.json
+D:\Vacancy-Link-Shortener\Vacancy Link Shortener\bin\Debug\net8.0\Vacancy Link Shortener.dll
+D:\Vacancy-Link-Shortener\Vacancy Link Shortener\bin\Debug\net8.0\Vacancy Link Shortener.pdb
+D:\Vacancy-Link-Shortener\Vacancy Link Shortener\obj\Debug\net8.0\Vacancy Link Shortener.GeneratedMSBuildEditorConfig.editorconfig
+D:\Vacancy-Link-Shortener\Vacancy Link Shortener\obj\Debug\net8.0\Vacancy Link Shortener.AssemblyInfoInputs.cache
+D:\Vacancy-Link-Shortener\Vacancy Link Shortener\obj\Debug\net8.0\Vacancy Link Shortener.AssemblyInfo.cs
+D:\Vacancy-Link-Shortener\Vacancy Link Shortener\obj\Debug\net8.0\Vacancy Link Shortener.csproj.CoreCompileInputs.cache
+D:\Vacancy-Link-Shortener\Vacancy Link Shortener\obj\Debug\net8.0\Vacancy Link Shortener.dll
+D:\Vacancy-Link-Shortener\Vacancy Link Shortener\obj\Debug\net8.0\refint\Vacancy Link Shortener.dll
+D:\Vacancy-Link-Shortener\Vacancy Link Shortener\obj\Debug\net8.0\Vacancy Link Shortener.pdb
+D:\Vacancy-Link-Shortener\Vacancy Link Shortener\obj\Debug\net8.0\Vacancy Link Shortener.genruntimeconfig.cache
+D:\Vacancy-Link-Shortener\Vacancy Link Shortener\obj\Debug\net8.0\ref\Vacancy Link Shortener.dll
