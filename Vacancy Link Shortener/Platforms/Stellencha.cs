@@ -1,14 +1,13 @@
-﻿using System.Runtime.ConstrainedExecution;
-using Vacancy_Link_Shortener.AbstractClasses;
+﻿using Vacancy_Link_Shortener.AbstractClasses;
 
 namespace Vacancy_Link_Shortener.Platforms
 {
-    public class PlatformStellencha : Platform
+    public class Stellencha : Platform
     {
         private string _platform = "STELLENCHA_OS";
         private string _baseurl = "https://www.stellencha.os/stellen";
 
-        public override string BuildUrl(int id, string title, string company)
+        public override string BuildUrl(int id, string title, string company, string[] regions)
         {
             string _company = RemoveSpecialChars(company);
             string _title = RemoveSpecialChars(title);
@@ -18,13 +17,12 @@ namespace Vacancy_Link_Shortener.Platforms
         public override string BuildTitle(string[] regions, string title, string company)
         {
             string regioninfo = CreateRegionInfo(regions);
-            return $"{title} | {company} | {regioninfo} | {RemoveSpecialChars(_platform)}";
+            return $"{title} | {company} | {regioninfo} | {ExtractPlatformName(_platform)}";
         }
 
         private string RemoveSpecialChars(string input)
         {
             string trimedInput = input
-             .ToLower()
              .Replace(' ', '-')
              .Replace("(", "")
              .Replace(")", "")
@@ -42,9 +40,9 @@ namespace Vacancy_Link_Shortener.Platforms
         {
             string regioninfo = string.Empty;
 
-            for (int region = 0; region < regions.Count(); region++)
+            for (int region = 0; region < regions.Length; region++)
             {
-                if (region == regions.Count() - 1)
+                if (region == regions.Length - 1)
                 {
                     regioninfo += $"{regions[region]}";
                 }
@@ -55,6 +53,11 @@ namespace Vacancy_Link_Shortener.Platforms
             }
 
             return regioninfo;
+        }
+
+        private string ExtractPlatformName(string platform)
+        {
+            return platform.ToLower().Replace("_", ".");
         }
     }
 }

@@ -2,7 +2,7 @@
 {
     public abstract class Platform
     {
-        public abstract string BuildUrl(int _id, string _title, string _company);
+        public abstract string BuildUrl(int id, string title, string company, string[] regions);
 
         public abstract string BuildTitle(string[] regions, string title, string company);
     }

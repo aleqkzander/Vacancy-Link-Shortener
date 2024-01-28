@@ -1,29 +1,25 @@
-﻿using Vacancy_Link_Shortener;
+﻿using Vacancy_Link_Shortener.Objects;
 using Vacancy_Link_Shortener.Platforms;
-
-PlatformStellencha stellencha = new();
 
 Vacancy stellenchaVacancy = new
     ( 12345, "Junior Software Developer (m/w/d) - 100% remote",
     "Software & More Inc.", ["München", "Dresden", "Berlin"],
-    stellencha);
+    new Stellencha());
 
-Console.WriteLine(stellenchaVacancy.GetSiteContent().GetUrl() + "\n" + stellenchaVacancy.GetSiteContent().GetTitle());
+Vacancy jobsMitBizzVanacy = new
+    (12345, "Junior Software Developer (m/w/d) - 100% remote",
+    "Software & More Inc.", ["München", "Dresden", "Berlin"],
+    new JobsMitBizz());
 
-//Vacancy jobmitbiz = new
-//    (
-//    12345,
-//    "Junior Software Developer (m/w/d) - 100% remote",
-//    "Software & More Inc.",
-//    ["München", "Dresden", "Berlin"],
-//    new Platform("JOBS_MIT_BIZ", "https://www.jobs-mit.biz/Jobs")s
-//    );
+Vacancy jobDealerVacancy = new
+    (12345, "Junior Software Developer (m/w/d) - 100% remote",
+    "Software & More Inc.", ["München", "Dresden", "Berlin"],
+    new JobDealer());
 
-//Vacancy jobdealer = new
-//    (
-//    12345,
-//    "Junior Software Developer (m/w/d) - 100% remote",
-//    "Software & More Inc.",
-//    ["München", "Dresden", "Berlin"],
-//    new Platform("JOB_DEALER", "https://www.job.dealer/job")
-//    );  
+List<Vacancy> vacancies = [stellenchaVacancy, jobsMitBizzVanacy, jobDealerVacancy];
+
+foreach(Vacancy vacancy in vacancies)
+{
+    Console.WriteLine(vacancy.GetSiteContent().Url() + "\n"
+    + vacancy.GetSiteContent().Title() + "\n\n");
+}

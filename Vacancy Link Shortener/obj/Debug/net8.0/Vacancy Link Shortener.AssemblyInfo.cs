@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Vacancy Link Shortener")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+983d6e19d8cb0176d0ab3d14f840494c8b371ed4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+817031db5c254d3e81502e84d022b7365de18b61")]
 [assembly: System.Reflection.AssemblyProductAttribute("Vacancy Link Shortener")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Vacancy Link Shortener")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
