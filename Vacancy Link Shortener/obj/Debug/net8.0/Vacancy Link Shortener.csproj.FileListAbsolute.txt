@@ -12,3 +12,4 @@ D:\Vacancy-Link-Shortener\Vacancy Link Shortener\obj\Debug\net8.0\refint\Vacancy
 D:\Vacancy-Link-Shortener\Vacancy Link Shortener\obj\Debug\net8.0\Vacancy Link Shortener.pdb
 D:\Vacancy-Link-Shortener\Vacancy Link Shortener\obj\Debug\net8.0\Vacancy Link Shortener.genruntimeconfig.cache
 D:\Vacancy-Link-Shortener\Vacancy Link Shortener\obj\Debug\net8.0\ref\Vacancy Link Shortener.dll
+D:\Vacancy-Link-Shortener\Vacancy Link Shortener\obj\Debug\net8.0\Vacancy Link Shortener.sourcelink.json

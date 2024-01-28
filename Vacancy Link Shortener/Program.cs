@@ -1,35 +1,29 @@
 ﻿using Vacancy_Link_Shortener;
+using Vacancy_Link_Shortener.Platforms;
 
-Vacancy vacancy = new
-    (
-    12345,
-    "Junior Software Developer (m/w/d) - 100% remote",
-    "Software & More Inc.",
-    ["München", "Dresden", "Berlin"],
-    new Platform("STELLENCHA_OS", "https://www.stellencha.os/stellen")
-    );
+PlatformStellencha stellencha = new();
 
-Vacancy jobmitbiz = new
-    (
-    12345,
-    "Junior Software Developer (m/w/d) - 100% remote",
-    "Software & More Inc.",
-    ["München", "Dresden", "Berlin"],
-    new Platform("JOBS_MIT_BIZ", "https://www.jobs-mit.biz/Jobs")
-    );
+Vacancy stellenchaVacancy = new
+    ( 12345, "Junior Software Developer (m/w/d) - 100% remote",
+    "Software & More Inc.", ["München", "Dresden", "Berlin"],
+    stellencha);
 
-Vacancy jobdealer = new
-    (
-    12345,
-    "Junior Software Developer (m/w/d) - 100% remote",
-    "Software & More Inc.",
-    ["München", "Dresden", "Berlin"],
-    new Platform("JOB_DEALER", "https://www.job.dealer/job")
-    );
+Console.WriteLine(stellenchaVacancy.GetSiteContent().GetUrl() + "\n" + stellenchaVacancy.GetSiteContent().GetTitle());
 
-SiteContent content = jobmitbiz.GetSiteContent();
+//Vacancy jobmitbiz = new
+//    (
+//    12345,
+//    "Junior Software Developer (m/w/d) - 100% remote",
+//    "Software & More Inc.",
+//    ["München", "Dresden", "Berlin"],
+//    new Platform("JOBS_MIT_BIZ", "https://www.jobs-mit.biz/Jobs")s
+//    );
 
-Console.WriteLine(
-    $"URL {content.GetUrl()}\n" +
-    $"Title {content.GetTitle()}"
-    );
+//Vacancy jobdealer = new
+//    (
+//    12345,
+//    "Junior Software Developer (m/w/d) - 100% remote",
+//    "Software & More Inc.",
+//    ["München", "Dresden", "Berlin"],
+//    new Platform("JOB_DEALER", "https://www.job.dealer/job")
+//    );  
