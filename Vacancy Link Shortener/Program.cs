@@ -8,7 +8,7 @@ Vacancy stellenchaVacancy = new
 
 Vacancy jobsMitBizzVanacy = new
     (12345, "Junior Software Developer (m/w/d) - 100% remote",
-    "Software & More Inc.", ["München", "Dresden", "Berlin"],
+    "Software & More Inc.", ["Berlin", "Hamburg", "Frankfurt", "Köln", "Bayern"],
     new JobsMitBizz());
 
 Vacancy jobDealerVacancy = new

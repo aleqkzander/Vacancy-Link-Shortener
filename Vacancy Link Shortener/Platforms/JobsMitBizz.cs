@@ -15,7 +15,7 @@ namespace Vacancy_Link_Shortener.Platforms
 
         public override string BuildTitle(string[] regions, string title, string company)
         {
-            string regioninfo = CreateRegionInfo(regions);
+            string regioninfo = CreateRegionInfoFrom(regions);
 
             return $"Jetzt Bewerben! - {title} @ {regioninfo}";
         }
@@ -80,6 +80,51 @@ namespace Vacancy_Link_Shortener.Platforms
             }
 
             return regioninfo;
+        }
+
+        private string CreateRegionInfoFrom(string[] regions)
+        {
+            int maxLengthToDisplay = 2;
+            string displayRegion = string.Empty;
+
+            for (int region = 0; region < regions.Length; region++)
+            {
+
+                switch (regions.Length)
+                {
+                    case 3:
+
+                        if (region == regions.Length - 1)
+                        {
+                            displayRegion += $"{regions[region]}";
+                        }
+                        else if (region == regions.Count() - 2)
+                        {
+                            displayRegion += $"{regions[region]} und ";
+                        }
+                        else
+                        {
+                            displayRegion += $"{regions[region]}, ";
+                        }
+
+                        break;
+
+                    case > 3:
+                        if (region < maxLengthToDisplay)
+                        {
+                            displayRegion += $"{regions[region]}, ";
+                        }
+                        else if (region == maxLengthToDisplay)
+                        {
+                            int remainingRegions = regions.Length - maxLengthToDisplay;
+                            displayRegion += $"und {remainingRegions} weitere Regionen".Replace(",", "");
+                            break;
+                        }
+                        break;
+                }
+            }
+
+            return displayRegion;
         }
     }
 }
